@@ -104,8 +104,8 @@ export const projects: Project[] = [
     tags: ['Vercel', 'Web', 'Responsive'],
     year: '2024',
     type: 'live-site',
-    liveUrl: 'https://vercel.com/ks-projects-d19c5660/student-apartment/BTyXp9kuaQQxHDzCx5qsJFc2fh7h',
-  },
+    liveUrl: 'https://student-apartment-6io5bd22k-ks-projects-d19c5660.vercel.app',
+  }
   {
     id: 'live-site-beta',
     title: 'Self Assessment (Big Five) App',
@@ -114,7 +114,7 @@ export const projects: Project[] = [
     tags: ['Vercel', 'Web App', 'Assessment'],
     year: '2023',
     type: 'live-site',
-    liveUrl: 'https://vercel.com/ks-projects-d19c5660/my-bigfive-app/BVCP72jTgTWM8A8XZT857P56thnA',
+    liveUrl: 'https://my-bigfive-app.vercel.app/',
   },
   {
     id: 'live-site-gamma',
