@@ -43,17 +43,17 @@ export function AllProjectsView({ projects, onProjectClick, onBackClick }: AllPr
 
       {/* Projects Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
-        {/* UX Case Studies Section */}
-        {caseStudies.length > 0 && (
-          <section id="ux-case-studies" className="scroll-mt-32">
+        {/* Live Sites Section */}
+        {liveSites.length > 0 && (
+          <section id="live-sites" className="scroll-mt-32">
             <div className="mb-8">
-              <h2 className="text-2xl text-foreground mb-2">UX Case Studies</h2>
+              <h2 className="text-2xl text-foreground mb-2">Live Sites & Projects</h2>
               <p className="text-muted-foreground max-w-2xl">
-                Deep-dive into user research, design process, and problem-solving methodologies.
+                Production applications and websites built with modern technologies.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {caseStudies.map((project) => (
+              {liveSites.map((project) => (
                 <ProjectCard
                   key={project.id}
                   project={project}
@@ -85,17 +85,17 @@ export function AllProjectsView({ projects, onProjectClick, onBackClick }: AllPr
           </section>
         )}
 
-        {/* Live Sites Section */}
-        {liveSites.length > 0 && (
-          <section id="live-sites" className="scroll-mt-32">
+        {/* UX Case Studies Section */}
+        {caseStudies.length > 0 && (
+          <section id="ux-case-studies" className="scroll-mt-32">
             <div className="mb-8">
-              <h2 className="text-2xl text-foreground mb-2">Live Sites & Projects</h2>
+              <h2 className="text-2xl text-foreground mb-2">UX Case Studies</h2>
               <p className="text-muted-foreground max-w-2xl">
-                Production applications and websites built with modern technologies.
+                Deep-dive into user research, design process, and problem-solving methodologies.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {liveSites.map((project) => (
+              {caseStudies.map((project) => (
                 <ProjectCard
                   key={project.id}
                   project={project}
