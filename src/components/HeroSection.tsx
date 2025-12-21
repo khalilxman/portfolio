@@ -10,7 +10,6 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onSectionChange }: HeroSectionProps) {
-  useTheme(); // Keep for consistency
 
   const sectionCards = [
     {
@@ -48,7 +47,7 @@ export function HeroSection({ onSectionChange }: HeroSectionProps) {
                 </span>
               </h1>
               <p className="text-lg leading-relaxed max-w-lg text-muted-foreground">
-                UI/UX Designer & Front-end Developer focused on user-centered design 
+                UI/UX Designer & Front-end Developer focused on user-centered design
                 and bringing ideas to life through code.
               </p>
             </div>
@@ -77,8 +76,8 @@ export function HeroSection({ onSectionChange }: HeroSectionProps) {
             <div className="relative">
               <div className="absolute inset-0 rounded-full blur-3xl opacity-30 bg-gradient-to-br from-primary to-secondary" />
               <Avatar className="relative w-80 h-80 shadow-2xl">
-                <AvatarImage 
-                  src={profileImage} 
+                <AvatarImage
+                  src={profileImage}
                   alt="KHALIL SABHA"
                   className="object-cover"
                 />

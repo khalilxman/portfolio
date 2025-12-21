@@ -11,7 +11,6 @@ interface NavigationProps {
 }
 
 export function Navigation({ activeSection, onSectionChange, onProfileClick }: NavigationProps) {
-  useTheme(); // Keep for consistency
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -42,11 +41,10 @@ export function Navigation({ activeSection, onSectionChange, onProfileClick }: N
                 <button
                   key={item.id}
                   onClick={() => onSectionChange(item.id)}
-                  className={`relative px-3 py-2 text-sm transition-all duration-200 ${
-                    activeSection === item.id
+                  className={`relative px-3 py-2 text-sm transition-all duration-200 ${activeSection === item.id
                       ? 'text-primary'
                       : 'text-muted-foreground hover:text-foreground'
-                  }`}
+                    }`}
                 >
                   {item.label}
                   {activeSection === item.id && (
@@ -77,11 +75,10 @@ export function Navigation({ activeSection, onSectionChange, onProfileClick }: N
               <button
                 key={item.id}
                 onClick={() => onSectionChange(item.id)}
-                className={`whitespace-nowrap px-3 py-2 text-sm transition-colors ${
-                  activeSection === item.id
+                className={`whitespace-nowrap px-3 py-2 text-sm transition-colors ${activeSection === item.id
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {item.label}
               </button>

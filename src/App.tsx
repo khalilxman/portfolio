@@ -12,7 +12,7 @@ import { Project } from './components/ProjectCard';
 type SectionType = 'home' | 'all-projects' | 'ux-case-studies' | 'ui-projects' | 'live-sites';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<SectionType>('all-projects');
+  const [activeSection, setActiveSection] = useState<SectionType>('home');
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
@@ -159,7 +159,7 @@ export default function App() {
                     khalil@example.com
                   </a>
                   <a
-                    href="https://linkedin.com/in/khalilsabha"
+                    href="https://linkedin.com/in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary text-sm transition-colors"
