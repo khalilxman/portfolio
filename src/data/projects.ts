@@ -114,7 +114,7 @@ export const projects: Project[] = [
     tags: ['Vercel', 'Web App', 'Assessment'],
     year: '2023',
     type: 'live-site',
-    liveUrl: 'https://my-bigfive-app.vercel.app',
+    liveUrl: 'https://my-bigfive-5avuuyq8d-ks-projects-d19c5660.vercel.app',
   },
   {
     id: 'live-site-gamma',
